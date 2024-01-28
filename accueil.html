@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>This is me</title>
+        <link rel="icon" href="accueil.png" /> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: "Roboto", sans-serif;
+                transition: 0.5s;
+                overflow: hidden;
+            }
+            header {
+                width: 100%;
+                height: 100vh;
+                background-color: #f9f7fe;
+            }
+            .nav {
+                width: 100%;
+                height: 80px;
+                border-style: solid;
+                border-width: medium;
+                border-color: #8e43e7;
+            }
+            nav {
+                width: 1200px;
+                height: 80px;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            nav .logo {
+                color: #8e43e7;
+                font-size: 30px;
+                cursor: pointer;
+            }
+            nav ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                list-style: none;
+            }
+            nav ul li {
+                margin-right: 40px;
+                font-size: 18px;
+                color: #686485;
+                font-weight: 500;
+            }
+            nav ul li a {
+                text-decoration: none;
+            }
+            nav ul li a:hover {
+                color: #8e43e7;
+            }
+            nav a {
+                text-decoration: none;
+            }
+            nav a:hover {
+                color: #8e43e7;
+            }
+            .container {
+                width: 1200px;
+                height: 100%;
+                margin: auto;
+                display: flex;
+            }
+            .container h4 {
+                padding-top: 100px;
+                color: #686485;
+            }
+            .container h1 {
+                font-size: 60px;
+                color: #3f3a64;
+                font-weight: 400;
+            }
+            .container span {
+                font-weight: 700;
+            }
+            .container p {
+                color: #6b6969;
+                line-height: 30px;
+                padding-top: 20px;
+                font-size: 19px;
+            }
+            .container img {
+                margin-left: 100px;
+                padding-top: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="nav">
+                <nav>
+                    <a href="accueil.html"><h1 class="logo">Portfolio</h1></a>
+                    <ul>
+                        <li><a href="accueil.html">Home</a></li>
+                        <li><a href="à_propos.html">About</a></li>
+                        <li><a href="Contact.html">Help</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="container">
+                <div class="content">
+                    <h4>HELLO</h4>
+                    <h1>I'm <span>Yahya Smadhi</span>,<br> A Web Developer</h1>
+                    <p>I'm 15 years old and I'm from Béja, Tunisia . <br>Moreover, I study in The Pioneer HighSchool <br>in Béja . I'm actually learning many coding <br>languages at the same time to develop my skills</p>
+                </div>
+                <img src="photo.png" width="50%" height="50%">
+            </div>
+        </header>
+    </body>
+</html>

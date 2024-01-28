@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact</title>
+        <link rel="icon" href="Contact.png" />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: "Roboto", sans-serif;
+                transition: 0.5s;
+                overflow: hidden;
+                }
+            header {
+                width: 100%;
+                height: 100vh;
+                background-color: #f9f7fe;
+            }
+            .nav {
+                width: 100%;
+                height: 80px;
+                border-style: solid;
+                border-width: medium;
+                border-color: #8e43e7;
+            }
+            nav {
+                width: 1200px;
+                height: 80px;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            nav .logo {
+                color: #8e43e7;
+                font-size: 30px;
+                cursor: pointer;
+            }
+            nav ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                list-style: none;
+            }
+            nav ul li {
+                margin-right: 40px;
+                font-size: 18px;
+                color: #686485;
+                font-weight: 500;
+            }
+            nav ul li a {
+                text-decoration: none;
+            }
+            nav ul li a:hover {
+                color: #8e43e7;
+            }
+            nav a {
+                text-decoration: none;
+            }
+            nav a:hover {
+                color: #8e43e7;
+            }
+            .container {
+                display: inline;
+            }
+            input, textarea {
+                border: none;
+                outline: none;
+                color: #adadad;
+                background-color: #e7e7e7;
+                border-radius: 5px;
+                font-size: 20px;
+            }
+            .mail {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-style: solid;
+                border-width: medium;
+                border-color: #adadad;
+                border-radius: 5px;
+                padding-top: 50px;
+                padding-bottom: 30px;
+                align-content: center;
+                margin-top: 100px;
+                margin-right: auto;
+                margin-left: auto;
+                width: 20%;
+                flex-direction: column;
+            }
+            #name, #email {
+                width: 80%;
+                margin-left: auto;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                margin-left: 30px;
+            }
+            #message {
+                padding-top: 5px;
+                padding-bottom: 60px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                margin-left: 30px;
+            }
+            #send {
+                padding-top: 5px;
+                padding-bottom: 5px;
+                margin-top: 10px;
+                margin-bottom: 5px;
+                font-size: 20px;
+                font-weight: 400;
+                background-color: #e7e7e7;
+                color: #686485;
+                border-style: solid;
+                border-color: #686485;
+                border-width: 2px;
+                border-radius: 5px;
+                margin-left: 130px;
+                cursor: pointer;
+            }
+            #send:hover {
+                border-color: #816dd6;
+                background-color: #816dd6;
+                color: #f9f7fe;
+            }
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                border-style: outset;
+                border-width: 5px;
+                width: 15%;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            .content a {
+                text-align: center;
+            }
+            .facebook {
+                display: flex;
+                align-content: center;
+                margin-bottom: 30px;
+                width: 90%;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            #fb {
+                width: 12%;
+            }
+            .instagram {
+                display: flex;
+                align-content: center;
+                margin-bottom: 30px;
+                width: 90%;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            #insta {
+                width: 12%;
+            }
+            .TikTok {
+                display: flex;
+                align-content: center;
+                width: 90%;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            #tiktok {
+                width: 12%;
+            }
+            .content a {
+                text-decoration: none;
+                font-size: 20px;
+                color: #686485;
+                font-weight: 500;
+            }
+            .content a:hover {
+                color: #8e43e7;
+            }
+        </style>
+        <script>
+            function validateForm() {
+                // Récupérer la valeur du champ "Name"
+                var name = document.getElementById('name').value;
+
+                // Vérifier si le champ "Name" est nul
+                if (name.trim() === '') {
+                    alert('Veuillez entrer votre nom.');
+                    return false; // Empêcher la soumission du formulaire si le champ "Name" est nul
+                }
+                // Récupérer la valeur de l'email
+                var email = document.getElementById('email').value;
+    
+                // Validation de l'e-mail avec une expression régulière basique
+                var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+                // Vérifier si l'e-mail est correct
+                if (!emailPattern.test(email)) {
+                    alert('Veuillez entrer une adresse e-mail valide.');
+                    return false; // Empêcher la soumission du formulaire si l'e-mail est incorrect
+                }
+    
+                var message = document.getElementById('message').value;
+                if (message.trim() === '') {
+                    alert('Veuillez envoyer un message.');
+                    return false; // Empêcher la soumission du formulaire si le champ "Name" est nul
+                }
+    
+                return true; // Permettre la soumission du formulaire si toutes les validations sont réussies
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="nav">
+                <nav>
+                    <a href="accueil.html"><h1 class="logo">Portfolio</h1></a>
+                    <ul>
+                        <li><a href="accueil.html">Home</a></li>
+                        <li><a href="à_propos.html">About</a></li>
+                        <li><a href="Contact.html">Help</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="container">
+                <div class="mail">
+                    <h1>Get In Touch</h1>
+                    <br>
+                    <form action="#">
+                        <input type="text" name="name" placeholder="  Name" id="name">
+                        <br>
+                        <input type="text" name="email" placeholder="  E-mail" id="email">
+                        <br>
+                        <input type="text" name="message" placeholder="  Message" id="message">
+                        <button id="send" type="submit" name="validate" onclick="validateForm()">Send</button>
+                    </form>
+                    
+                </div>
+                <div class="content">
+                    <div class="facebook">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/1200px-Facebook_f_logo_%282021%29.svg.png" id="fb">
+                        <a href="https://www.facebook.com/people/Yahya-Smadhi/pfbid02bMpMv6K2AJbwzXn9iGaRaCNiGJA1U8QhKkWEDxhy5BEFHcJjhmADShx1k9PWPW21l/?mibextid=JRoKGi" target="_blank">@Yahya_Smadhi</a>
+                    </div>
+                    <div class="instagram">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" id="insta">
+                        <a href="https://www.instagram.com/smadhi.yahya/?igsh=MXA1ZXZ6ZmZ6YTJsbg%3D%3D&utm_source=qr" target="_blank">@smadhi.yahya</a>
+                    </div>
+                    <div class="TikTok">
+                        <img src="https://iconape.com/wp-content/files/fd/121669/svg/TikTok_Logo.svg" id="tiktok">
+                        <a href="https://www.tiktok.com/@yahiasmadhi?_t=8ibD1kNV06Q&_r=1" target="_blank">@yahiasmadhi</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+      
+    </body>
+</html>

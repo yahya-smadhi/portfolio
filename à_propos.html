@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>About</title>
+        <link rel="icon" href="à_propos.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: "Roboto", sans-serif;
+                transition: 0.5s;
+                overflow: hidden;
+            }
+            header {
+                width: 100%;
+                height: 100vh;
+                background-color: #f9f7fe;
+            }
+            .nav {
+                width: 100%;
+                height: 80px;
+                border-style: solid;
+                border-width: medium;
+                border-color: #8e43e7;
+            }
+            nav {
+                width: 1200px;
+                height: 80px;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            nav .logo {
+                color: #8e43e7;
+                font-size: 30px;
+                cursor: pointer;
+            }
+            nav ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                list-style: none;
+            }
+            nav ul li {
+                margin-right: 40px;
+                font-size: 18px;
+                color: #686485;
+                font-weight: 500;
+            }
+            nav ul li a {
+                text-decoration: none;
+            }
+            nav ul li a:hover {
+                color: #8e43e7;
+            }
+            nav a {
+                text-decoration: none;
+            }
+            nav a:hover {
+                color: #8e43e7;
+            }
+            .container {
+                display: flex;
+                justify-content: space-around;
+            }
+            .container p {
+                color: #6b6969;
+                line-height: 30px;
+                font-size: 20px;
+            }
+            .hobbies {
+                padding-top: 80px;
+                width: 30%;
+                text-align: center;
+            }
+            .hobbies a {
+                text-decoration: none;
+                text-decoration: underline;
+                color: #686485;
+            }
+            .hobbies a:hover {
+                color: #8e43e7 ;
+            }
+            .hobbies a:active {
+                color: #8e43e7 ;
+            }
+            .plans {
+                padding-top: 140px;
+                width: 30%;
+                text-align: center;
+            }
+            .plans img {
+                width: 55%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="nav">
+                <nav>
+                    <a href="accueil.html"><h1 class="logo">Portfolio</h1></a>
+                    <ul>
+                        <li><a href="accueil.html">Home</a></li>
+                        <li><a href="à_propos.html">About</a></li>
+                        <li><a href="Contact.html">Help</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="container">
+                <div class="hobbies">
+                    <img src="hobby_icon.png">
+                    <p>I am 15 years old, a student enrolled at <a href="https://www.facebook.com/people/Lycée-Pilote-Béja/100092045775800/?sk=about" target="_blank">Béja's Pioneer HighSchool</a>. Likewise, I am registered at the <a href="https://gomycode.com/tn/fr/?utm_term=&utm_campaign=SEA%7CPMAX%7CTN%7CBootcamps&utm_source=adwords&utm_medium=ppc&hsa_acc=5951693601&hsa_cam=19958638058&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAiA-bmsBhAGEiwAoaQNmi33MAxI5KEbIv6_skn2jwbrrgLnM0pc2wkVfa5509GcRhWOgf_P4xoCJVsQAvD_BwE" target="_blank">GOMYCODE</a> training center to master new skills. So, I have several "hobbies" including programming, painting, theater, camping, etc...</p>
+                </div>
+                <div class="plans">
+                    <img src="idea.svg">
+                    <p>When I grow up, I'm going to be software engeneer . My dream is going to Japan, but I'm planning to study in London . During this long trip, I want to master other new skills like self-reliability and money managements so I can live alone while at the University</p>
+                </div>
+            </div>
+        </header>
+    </body>
+</html>
